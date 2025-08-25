@@ -11,7 +11,7 @@ test('Assertions', async({page})=>{
     await page.waitForSelector("input[id='submitButton']");
    // await expect(page.locator("input[id='submitButton']")).toBeEnabled();
     await page.locator("input[id='submitButton']").click();
-    
+    await page.pause();
     
 
 }
