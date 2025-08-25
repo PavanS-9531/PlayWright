@@ -17,6 +17,7 @@ test('hover action', async ({page})=>{
     await page.goto("http://uitestingplayground.com/mouseover");
     await page.locator("[title='Click me']").hover();
     await page.pause();
+    await page.pause();
     
 
 
