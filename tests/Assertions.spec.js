@@ -6,6 +6,7 @@ test('Assertions', async({page})=>{
    // await page.waitForTimeout(12000);
     await page.waitForLoadState('domcontentloaded');
     await expect(page.locator("[name='user_name']")).toBeEditable();
+    await page.pause();
     await page.locator("[name='user_name']").fill("admin");
     await page.locator("[name='user_password']").fill("admin");
     await page.waitForSelector("input[id='submitButton']");
