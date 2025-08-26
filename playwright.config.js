@@ -13,14 +13,14 @@ import { defineBddConfig } from 'playwright-bdd';
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
-const testDir = defineBddConfig({
-  paths: ['features/*.feature'],
-  require: ['steps/*.js'],
-  importTestFrom: 'steps/fixtures/fixtures.js',
-});
+// const testDir = defineBddConfig({
+//   paths: ['features/*.feature'],
+//   require: ['steps/*.js'],
+//   importTestFrom: 'steps/fixtures/fixtures.js',
+// });
 
 export default defineConfig({
-  //testDir: './tests',
+  testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: false,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
